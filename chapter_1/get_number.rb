@@ -21,7 +21,7 @@ num_guesses = 0
 # Track whether the player has guessed correctly
 guessed_it = false
 
-while num_guesses < 10 && guessed_it == false
+until num_guesses < 10 && guessed_it == false
   puts "You've got #{10 - num_guesses} guesses left."
   print "Make a guess: "
   guess = gets.to_i
