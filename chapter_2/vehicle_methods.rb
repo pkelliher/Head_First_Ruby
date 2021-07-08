@@ -13,6 +13,18 @@ def use_headlights(brightness = "low-beam")
     puts "Watch out for the deer!"
 end
 
+def mileage(miles_driven, gas_used)
+    miles_driven / gas_used
+end
+
+trip_mileage = mileage(400, 12)
+puts "You got #{trip_mileage} MPG on this trip."
+
+lifetime_mileage = mileage(11432, 366)
+puts "This car averages #{lifetime_mileage} MPG."
+
+puts mileage(400, 12)
+
 sound_horn
 accelerate
 use_headlights("high-beam")
