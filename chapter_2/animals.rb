@@ -8,11 +8,12 @@ class Bird
 end
 
 class Dog
-    def talk (name)
-        puts "#{name} says Bark!"
+    def make_up_name
+        @name = "Sandy"
     end
-    def move(name, destination)
-        puts "#{name} runs to the #{destination}."
+
+    def talk
+        puts "#{@name} says Bark!"
     end
 end
 
@@ -26,9 +27,8 @@ class Cat
 end
 
 dog = Dog.new
-dog_name = "Lucy"
-dog.talk(dog_name)
-dog.move(dog_name, "fence")
+dog.make_up_name
+dog.talk
 
 cat = Cat.new
 cat_name = "Fluffy"
