@@ -1,4 +1,5 @@
 class Bird
+    # talk bird method
     def talk (name)
         puts "#{name} says Chirp! Chirp!"
     end
