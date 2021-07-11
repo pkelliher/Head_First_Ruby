@@ -36,9 +36,15 @@ class Dog < Animal
 end
 
 class Bird < Animal
+    def talk
+        puts "#{@name} says Chirp! Chirp!"
+    end
 end
 
 class Cat < Animal
+    def talk
+        puts "#{@name} says Meow!"
+    end
 end
 
 whiskers = Cat.new
@@ -52,3 +58,4 @@ polly.age = 2
 polly.report_age
 fido.move("yard")
 whiskers.talk
+polly.talk
