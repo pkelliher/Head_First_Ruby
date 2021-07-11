@@ -29,4 +29,14 @@ class Animal
     def report_age
         puts "#{@name} is #{@age} years old."
     end
+
+end
+
+class Dog < Animal
+end
+
+class Bird < Animal
+end
+
+class Cat < Animal
 end
