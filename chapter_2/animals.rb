@@ -31,7 +31,7 @@ class Dog
     end
 end
 
-
+# Creating new dog
 dog = Dog.new
 dog.name = "Ted"
 dog.age = 1
