@@ -40,3 +40,15 @@ end
 
 class Cat < Animal
 end
+
+whiskers = Cat.new
+whiskers.name = "Whiskers"
+fido = Dog.new
+fido.name = "Fido"
+polly = Bird.new
+polly.name = "Polly"
+
+polly.age = 2
+polly.report_age
+fido.move("yard")
+whiskers.talk
