@@ -65,7 +65,7 @@ rex = Dog.new
 rex.name = "Rex"
 rex.age = 2
 
-puts lucy.to_s, rex.to_s
+puts lucy, rex
 
 whiskers = Cat.new
 whiskers.name = "Whiskers"
