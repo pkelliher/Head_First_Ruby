@@ -57,6 +57,7 @@ class Armadillo < Animal
         end
 end
 
+# Dog
 lucy = Dog.new
 lucy.name = "Lucy"
 lucy.age = 4
@@ -67,6 +68,7 @@ rex.age = 2
 
 puts lucy, rex
 
+# Cat
 whiskers = Cat.new
 whiskers.name = "Whiskers"
 fido = Dog.new
@@ -74,12 +76,14 @@ fido.name = "Fido"
 polly = Bird.new
 polly.name = "Polly"
 
+# Bird
 polly.age = 2
 polly.report_age
 fido.move("yard")
 whiskers.talk
 polly.talk
 
+# Armadillo
 dillon = Armadillo.new
 dillon.name = "Dillon"
 dillon.move("burrow")
