@@ -47,6 +47,13 @@ class Cat < Animal
     end
 end
 
+class Armadillo < Animal
+    def move(destination)
+        puts "#{@name} unrolls!"
+        super
+        end
+end
+
 whiskers = Cat.new
 whiskers.name = "Whiskers"
 fido = Dog.new
@@ -59,3 +66,7 @@ polly.report_age
 fido.move("yard")
 whiskers.talk
 polly.talk
+
+dillon = Armadillo.new
+dillon.name = "Dillon"
+dillon.move("burrow")
