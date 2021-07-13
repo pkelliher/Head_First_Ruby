@@ -1,3 +1,4 @@
+# Animal Super class
 class Animal
     
     attr_reader :name, :age
@@ -32,18 +33,21 @@ class Animal
 
 end
 
+# Dog sub class
 class Dog < Animal
     def to_s
     "#{@name} the dog, age #{age}"
     end
 end
 
+# Bird sub class
 class Bird < Animal
     def talk
         puts "#{@name} says Chirp! Chirp!"
     end
 end
 
+# Cat sub class
 class Cat < Animal
     def talk
         puts "#{@name} says Meow!"
