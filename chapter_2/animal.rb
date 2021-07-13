@@ -21,15 +21,17 @@ class Animal
         end
     end
 
-    # Move method with destination parameter
+    # move method with destination parameter
     def move(destination)
         puts "#{@name} runs to the #{destination}."
     end
 
+    # talk method
     def talk
         puts "#{@name} says Bark!"
     end
 
+    # report_age method
     def report_age
         puts "#{@name} is #{@age} years old."
     end
