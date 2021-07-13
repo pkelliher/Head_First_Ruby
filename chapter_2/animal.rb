@@ -1,8 +1,10 @@
 # Animal Super class
 class Animal
     
+    # Read attribute with name and age elements
     attr_reader :name, :age
 
+    # Name attribute writer method name and age
     def name= (value)
         if value == ""
             raise "Name can't be blank!"
@@ -19,6 +21,7 @@ class Animal
         end
     end
 
+    # Move method with destination parameter
     def move(destination)
         puts "#{@name} runs to the #{destination}."
     end
