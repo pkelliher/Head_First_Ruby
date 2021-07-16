@@ -41,16 +41,20 @@ end
 
 class HourlyEmployee < Employee
 
+    # Reading the houry_wage and hours_per_week
     attr_reader :hourly_wage, :hours_per_week
 
+    # Method to set the hourly wage
     def hourly_wage= (hourly_wage)
         # fill in later
     end
-
+    
+    # Method to set the hours per week
     def hours_per_week= (hours_per_week)
         # fill in later
     end
-
+    
+    # initallzing name, hourly wage and hours per week and populating default values.
     def initialize (name = "Anonymous", hourly_wage = 0.0, hours_per_week = 0.0)
         self.name = name
         self.hourly_wage = hourly_wage
