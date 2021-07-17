@@ -54,13 +54,14 @@ class HourlyEmployee < Employee
         # fill in later
     end
     
-    # initallzing name, hourly wage and hours per week and populating default values.
+    # Initallzing name, hourly wage and hours per week and populating default values.
     def initialize (name = "Anonymous", hourly_wage = 0.0, hours_per_week = 0.0)
         self.name = name
         self.hourly_wage = hourly_wage
         self.hours_per_week = hours_per_week
     end
 
+    # Pint pay stub method with hourly wage calculator
     def print_pay_stub
         print_name
         pay_for_period = hourly_wage * hours_per_week * 2
