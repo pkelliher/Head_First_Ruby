@@ -9,6 +9,10 @@ class Employee
         # @name = name
     end
 
+    def initialize (name = "Anonymous")
+        self.name = name
+    end
+
     def print_name
         puts "Name: #{name}"
     end
@@ -26,7 +30,7 @@ class SalariedEmployee < Employee
     end
 
     def initialize (name = "Anonymous", salary = 0.0)
-        self.name = name
+        super(name)
         self.salary = salary
     end
 
@@ -56,7 +60,7 @@ class HourlyEmployee < Employee
     
     # Initallzing name, hourly wage and hours per week and populating default values.
     def initialize (name = "Anonymous", hourly_wage = 0.0, hours_per_week = 0.0)
-        self.name = name
+        super(name)
         self.hourly_wage = hourly_wage
         self.hours_per_week = hours_per_week
     end
