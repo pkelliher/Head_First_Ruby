@@ -15,3 +15,7 @@ def total(prices)
     end
     amount
 end
+
+prices = [3.99, 25.00, 8.99]
+
+puts format("%.2f", total(prices))
