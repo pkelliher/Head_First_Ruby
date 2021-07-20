@@ -6,6 +6,7 @@ while index < prices.length
     index += 1
 end
 
+#total method
 def total(prices)
     amount = 0
     index = 0
@@ -20,6 +21,7 @@ prices = [3.99, 25.00, 8.99]
 
 puts format("%.2f", total(prices))
 
+#refund method
 def refund(prices)
     amount = 0
     index = 0
@@ -32,6 +34,7 @@ end
 
 puts format("%.2f", refund(prices))
 
+#show discounts method
 def show_discounts(prices)
     index = 0
     while index < prices.length
