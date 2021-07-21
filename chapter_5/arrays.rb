@@ -1,3 +1,4 @@
+# prices array
 prices = [25.00, 9.99, 3.99, 0.99, 5.99, 8.99]
 
 index = 0
