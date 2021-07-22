@@ -8,12 +8,27 @@ while index < prices.length
 end
 
 #total method
+# def total(prices)
+#     amount = 0
+#     index = 0
+#     while index < prices.length
+#         amount += prices[index]
+#         index += 1
+#     end
+#     amount
+# end
+
+# prices = [3.99, 25.00, 8.99]
+
+# puts format("%.2f", total(prices))
+
+
+# refactored total method with .each method to loop through the prices array
+# and using a code block to increment and sum each element in the array.
 def total(prices)
     amount = 0
-    index = 0
-    while index < prices.length
-        amount += prices[index]
-        index += 1
+    prices.each do |price|
+        amount += price
     end
     amount
 end
