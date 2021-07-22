@@ -33,10 +33,6 @@ def total(prices)
     amount
 end
 
-prices = [3.99, 25.00, 8.99]
-
-puts format("%.2f", total(prices))
-
 #refund method
 # def refund(prices)
 #     amount = 0
@@ -59,10 +55,6 @@ def refund(prices)
     amount
 end
 
-prices = [3.99, 25.00, 8.99]
-
-puts format("%.2f", refund(prices))
-
 #show discounts method
 # def show_discounts(prices)
 #     index = 0
@@ -84,4 +76,7 @@ def show_discounts(prices)
 end
 
 prices = [3.99, 25.00, 8.99]
+
+puts format("%.2f", total(prices))
+puts format("%.2f", refund(prices))
 show_discounts(prices)
