@@ -1,7 +1,7 @@
-# Total method, sums amounts 
+# total method, sums float integers 
 # listed in prices array, each iterates through the array 
 # and stores the price block argument, the code block handles the sum function 
-# then stores in the amount
+# then stores in the amount.
 def total(prices)
     amount = 0
     prices.each do |price|
@@ -10,6 +10,10 @@ def total(prices)
     amount
 end
 
+# refund method, decrements the float integers 
+# listed in prices array, each iterates through the array 
+# and stores the price block argument, the code block handles the subtraction
+#  function then stores in the amount.
 def refund(prices)
     amount = 0
     prices.each do |price|
