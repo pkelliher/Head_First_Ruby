@@ -1,3 +1,7 @@
+# Total method, sums amounts 
+# listed in prices array, each iterates through the array 
+# and stores the price block argument, the code block handles the sum function 
+# then stores in the amount
 def total(prices)
     amount = 0
     prices.each do |price|
