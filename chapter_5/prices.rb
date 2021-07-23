@@ -22,6 +22,10 @@ def refund(prices)
     amount
 end
 
+# show_discounts method, discounts by 30% and displays that 30% saving for 
+# the float integers listed in prices array, each iterates through the array 
+# and stores the price block argument, the code block handles the division by
+# 30% function then stores in the amount.
 def show_discounts(prices)
     prices.each do |price|
         amount_off = price / 3.0
