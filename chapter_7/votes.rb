@@ -14,4 +14,4 @@ lines.each do |line|
   end
 end
 
-p lines
+p votes
