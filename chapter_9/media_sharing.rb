@@ -37,12 +37,13 @@ end
 photo = Photo.new
 photo.add_comment("Beautiful colors.")
 
-p photo.comments
 
 video = Video.new
 video.add_comment("Cool slow motion effect!")
 video.add_comment("Weird ending.")
 song = Song.new
 song.add_comment("Awesome beat.")
+photo = Photo.new
+photo.add_comment("Beautiful colors.")
 
-p video.comments, song.comments
+p video.comments, song.comments, photo.comments
