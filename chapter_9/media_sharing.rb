@@ -29,8 +29,8 @@ end
 
 class Photo
     include AcceptsComments
-    def show
-        puts "Displaying #{object_id}..."
+    def initialize
+        @format = 'JPEG'
     end
 end
 
