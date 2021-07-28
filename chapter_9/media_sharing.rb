@@ -1,11 +1,3 @@
-class Clip
-
-    def play
-        puts "Playing #{object_id}..."
-    end
-    
-end
-
 module AcceptsComments
     def comments
         if @comments
@@ -19,6 +11,14 @@ module AcceptsComments
         comments << comment
     end
     
+end
+
+class Clip
+
+    def play
+        puts "Playing #{object_id}..."
+    end
+
 end
 
 class Video < Clip
