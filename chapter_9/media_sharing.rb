@@ -22,10 +22,12 @@ class Clip
 end
 
 class Video < Clip
+    include AcceptsComments
     attr_accessor :resolution
 end
 
 class Song < Clip
+    include AcceptsComments
     attr_accessor :beats_per_minute
 end
 
