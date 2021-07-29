@@ -1,4 +1,7 @@
 class Steak
+
+  include Comparable
+
   GRADE_SCORES = { "Prime" => 3, "Choice" => 2, "Select" => 1 }
 
   attr_accessor :grade
@@ -12,6 +15,7 @@ class Steak
       reuturn 1
     end
   end
+
 end
 
 first_steak = Steak.new
