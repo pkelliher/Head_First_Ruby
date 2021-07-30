@@ -1,0 +1,1 @@
+var search_data = {"index":{"searchIndex":["object","make_casserole()"],"longSearchIndex":["object","object#make_casserole()"],"info":[["Object","","Object.html","",""],["make_casserole","Object","Object.html#method-i-make_casserole","()",""]]}}
