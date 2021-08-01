@@ -5,7 +5,7 @@ end
 
 class SmallOven
 
-    attr_accessor :contents
+    attr_accessor :contents 
 
     def turn_on
         puts "Turning oven on."
@@ -30,13 +30,13 @@ end
 
 dinner = ['turkey', 'casserole', 'pie']
 oven = SmallOven.new
-oven.turn_off
+oven.turn_on
 dinner.each do |item|
     begin
     oven.contents = item
     puts "Serving #{oven.bake}."
     rescue OvenEmptyError => error
-        puts "Error: #{error.message}"
+    puts "Error: #{error.message}"
     rescue OvenOffError =>
         oven.turn_on
     end
