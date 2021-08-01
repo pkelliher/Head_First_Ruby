@@ -27,6 +27,10 @@ dinner = ['turkey', 'casserole', 'pie']
 oven = SmallOven.new
 oven.turn_on
 dinner.each do |item|
+    begin
     oven.contents = item
     puts "Serving #{oven.bake}."
+    rescue
+        puts "Error: There's nothing in the oven!"
+    end
 end
