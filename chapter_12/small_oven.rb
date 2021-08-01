@@ -30,7 +30,7 @@ dinner.each do |item|
     begin
     oven.contents = item
     puts "Serving #{oven.bake}."
-    rescue
-        puts "Error: There's nothing in the oven!"
+    rescue => error
+        puts "Error: #{error.message}"
     end
 end
