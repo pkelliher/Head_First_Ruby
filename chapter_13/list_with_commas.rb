@@ -6,3 +6,10 @@ class ListWithCommas
         "#{other_items} #{last_item}"
     end
 end
+
+two_subjects = ListWithCommas.new
+two_subjects.items = ['my_parents', 'a rodeo clown']
+puts "A photo of #{two_subjects.join}"
+three_subjects = ListWithCommas.new
+three_subjects.items = ['my parents', 'a rodeo clown', 'a prize bull']
+puts "A photo of #{three_subjects.join}"
