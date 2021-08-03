@@ -2,6 +2,7 @@ class Dog
     
     attr_reader :name, :age
 
+    #name method
     def name= (value)
         if value == ""
             raise "Name can't be blank!"

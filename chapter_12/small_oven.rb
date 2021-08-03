@@ -28,16 +28,17 @@ class SmallOven
 
 end
 
-dinner = ['turkey', 'casserole', 'pie']
+dinner = ['turkey', nil, 'pie']
 oven = SmallOven.new
 oven.turn_on
 dinner.each do |item|
     begin
-    oven.contents = item
-    puts "Serving #{oven.bake}."
+        oven.contents = item
+        puts "Serving #{oven.bake}."
     rescue OvenEmptyError => error
-    puts "Error: #{error.message}"
+        puts "Error: #{error.message}"
     rescue OvenOffError =>
         oven.turn_on
+        retry
     end
 end
