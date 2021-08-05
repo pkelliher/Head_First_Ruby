@@ -1,5 +1,5 @@
 require 'sinatra'
 
-get(/movies) do
+get('/movies') do
     'Coming Soon...!'
 end
