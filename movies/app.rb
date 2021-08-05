@@ -13,5 +13,5 @@ get('/movies') do
 end
 
 get('/movies/new') do
-    erb: new
+    erb :new
 end
