@@ -6,6 +6,12 @@ class MovieStore
         @store = YAML::Store.new(file_name)
     end
 
+    def all
+        @store.transaction do
+            @store.roots.map { |id| @store[id] }
+        end
+    end
+
     def save(movie)
         @store.transaction do
             unless movie.id
@@ -13,7 +19,7 @@ class MovieStore
                 movie.id = highest_id + 1
         end
         @store[movie.id] = movie
+        end 
     end
-end
 
 end
