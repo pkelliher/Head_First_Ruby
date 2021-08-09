@@ -4,3 +4,8 @@
   director:
   year: '1977'
   id: 1
+2: !ruby/object:Movie
+  title: Pulp Fiction
+  director: Quentin Tarantino
+  year: '1994'
+  id: 2

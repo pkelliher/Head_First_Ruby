@@ -16,7 +16,7 @@ end
 post('/movies/create') do
     @movie = Movie.new
     @movie.title = params['title']
-    @movie.director = params['diretor']
+    @movie.director = params['director']
     @movie.year = params['year']
     store.save(@movie)
     redirect '/movies/new'
@@ -24,6 +24,6 @@ end
 
 get('/movies/:id') do
     id = params['id'].to_i
-    @movie = store.find{id}
+    @movie = store.find(id)
     erb :show
 end
