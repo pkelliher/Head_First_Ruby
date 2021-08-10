@@ -1,7 +1,7 @@
 ---
 1: !ruby/object:Movie
   title: Star Wars
-  director:
+  director: George Lucas
   year: '1977'
   id: 1
 2: !ruby/object:Movie
